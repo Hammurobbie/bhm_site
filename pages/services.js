@@ -10,7 +10,7 @@ export default function Services() {
         <title>Services</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Services</p>
+        <h1>Services</h1>
       </section>
     </Layout>
   );

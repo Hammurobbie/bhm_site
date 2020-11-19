@@ -13,16 +13,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to BH&M!</h1>
-
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-        <Link href="/contact">
-          <a>Contact</a>
-        </Link>
-        <Link href="/services">
-          <a>Services</a>
-        </Link>
       </main>
     </Layout>
   );

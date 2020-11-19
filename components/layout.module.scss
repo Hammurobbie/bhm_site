@@ -6,18 +6,26 @@
 
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+
+  a {
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #dc0106;
+    transition: 0.3s;
+  }
 }
 
 .headerImage {
   width: 6rem;
-  height: 6rem;
 }
 
 .headerHomeImage {
   width: 8rem;
-  height: 8rem;
 }
 
 .backToHome {

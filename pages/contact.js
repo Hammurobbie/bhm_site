@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import ContactForm from "../components/ContactForm";
 import utilStyles from "../styles/utils.module.scss";
 
 export default function Contact() {
@@ -9,7 +10,7 @@ export default function Contact() {
         <title>Contact</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Contact</p>
+        <ContactForm />
       </section>
     </Layout>
   );

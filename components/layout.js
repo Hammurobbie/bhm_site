@@ -6,9 +6,10 @@ import Link from "next/link";
 export const siteTitle = "BH&M Environmental Consulatnts, Inc";
 
 export default function Layout({ children, home }) {
-  console.log(home, children[0].props.children[0]);
-
   const homeCheck = children[0].props.children[0];
+
+  const year = new Date().getFullYear();
+
   return (
     <div className={utilStyles.container}>
       <Head>
@@ -27,10 +28,16 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <Link href="/">
+          <a>home</a>
+        </Link>
+        <Link href="/about">
+          <a>about</a>
+        </Link>
         {homeCheck ? (
           <>
             <img
-              src="/images/profile.jpg"
+              src="/images/logo.png"
               className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
               alt="logo"
             />
@@ -40,7 +47,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <a>
                 <img
-                  src="/images/profile.jpg"
+                  src="/images/logo.png"
                   className={`${styles.headerImage} ${utilStyles.borderCircle}`}
                   alt="logo"
                 />
@@ -48,6 +55,12 @@ export default function Layout({ children, home }) {
             </Link>
           </>
         )}
+        <Link href="/contact">
+          <a>contact</a>
+        </Link>
+        <Link href="/services">
+          <a>services</a>
+        </Link>
       </header>
       <main>{children}</main>
       {!homeCheck && (
@@ -58,14 +71,9 @@ export default function Layout({ children, home }) {
         </div>
       )}
       <footer className={utilStyles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <p>
+          Copyright © {year} | BH&M Environmental Consultants Memphis, Tennessee
+        </p>
       </footer>
     </div>
   );

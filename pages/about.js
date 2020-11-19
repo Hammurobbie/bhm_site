@@ -9,7 +9,7 @@ export default function About() {
         <title>About</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>About</p>
+        <h1>About</h1>
       </section>
     </Layout>
   );
