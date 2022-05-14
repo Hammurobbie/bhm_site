@@ -9,15 +9,25 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  max-width: 1040px;
+  background: #fefeff;
 
   a {
-    transition: 0.3s;
+    transition: 0.4s;
+    text-transform: uppercase;
+    line-height: 33px;
+    padding: 0 10px;
+    font-family: 'Lato', sans-serif;
   }
 
   a:hover {
     color: #dc0106;
-    transition: 0.3s;
+    transition: 0.4s;
   }
+}
+
+.curPageColor {
+  color: #dc0106;
 }
 
 .headerImage {

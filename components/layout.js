@@ -2,11 +2,13 @@ import Head from "next/head";
 import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const siteTitle = "BH&M Environmental Consulatnts, Inc";
 
 export default function Layout({ children, home }) {
   const homeCheck = children[0].props.children[0];
+  const route = useRouter().pathname.substring(1);
 
   const year = new Date().getFullYear();
 
@@ -14,6 +16,12 @@ export default function Layout({ children, home }) {
     <div className={utilStyles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@200&display=swap"
+          rel="stylesheet"
+        />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -28,38 +36,41 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
+        <>
+          <Link href="/">
+            <a>
+              <img
+                src="/images/logo.png"
+                className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                alt="logo"
+              />
+            </a>
+          </Link>
+        </>
         <Link href="/">
-          <a>home</a>
+          <a className={route === "" ? styles.curPageColor : undefined}>home</a>
+        </Link>
+        <Link href="/consulting">
+          <a
+            className={route === "consulting" ? styles.curPageColor : undefined}
+          >
+            consulting
+          </a>
+        </Link>
+        <Link href="/lab">
+          <a className={route === "lab" ? styles.curPageColor : undefined}>
+            lab
+          </a>
+        </Link>
+        <Link href="/contact">
+          <a className={route === "contact" ? styles.curPageColor : undefined}>
+            contact
+          </a>
         </Link>
         <Link href="/about">
-          <a>about</a>
-        </Link>
-        {homeCheck ? (
-          <>
-            <img
-              src="/images/logo.png"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt="logo"
-            />
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/logo.png"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt="logo"
-                />
-              </a>
-            </Link>
-          </>
-        )}
-        <Link href="/contact">
-          <a>contact</a>
-        </Link>
-        <Link href="/services">
-          <a>services</a>
+          <a className={route === "about" ? styles.curPageColor : undefined}>
+            about
+          </a>
         </Link>
       </header>
       <main>{children}</main>
@@ -71,9 +82,11 @@ export default function Layout({ children, home }) {
         </div>
       )}
       <footer className={utilStyles.footer}>
-        <p>
-          Copyright © {year} | BH&M Environmental Consultants Memphis, Tennessee
-        </p>
+        <div></div>
+        <div></div>
+        <div>
+          <p>© {year} | BH&M Environmental Consultants Memphis, Tennessee</p>
+        </div>
       </footer>
     </div>
   );

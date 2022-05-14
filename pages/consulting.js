@@ -3,14 +3,14 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
 
-export default function Services() {
+export default function Consulting() {
   return (
     <Layout>
       <Head>
-        <title>Services</title>
+        <title>Consulting</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <h1>Services</h1>
+        <h1>Consulting</h1>
       </section>
     </Layout>
   );
