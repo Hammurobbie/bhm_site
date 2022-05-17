@@ -82,9 +82,13 @@ export default function Layout({ children, home }) {
         </div>
       )}
       <footer className={utilStyles.footer}>
-        <div></div>
-        <div></div>
-        <div>
+        <div className={utilStyles.footer1}>
+          <div>Hours</div>
+        </div>
+        <div className={utilStyles.footer2}>
+          <div>Visit us</div>
+        </div>
+        <div className={utilStyles.footer3}>
           <p>© {year} | BH&M Environmental Consultants Memphis, Tennessee</p>
         </div>
       </footer>
