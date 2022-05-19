@@ -3,6 +3,8 @@ import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { BsTelephone, BsClock } from "react-icons/bs";
+import { VscMail } from "react-icons/vsc";
 
 export const siteTitle = "BH&M Environmental Consulatnts, Inc";
 
@@ -19,7 +21,7 @@ export default function Layout({ children, home }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:wght@200&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Nunito+Sans:wght@200;300&display=swap"
           rel="stylesheet"
         />
         <meta
@@ -83,10 +85,62 @@ export default function Layout({ children, home }) {
       )}
       <footer className={utilStyles.footer}>
         <div className={utilStyles.footer1}>
-          <div>Hours</div>
+          <div>
+            <div>
+              <div className={utilStyles.iconHeader}>
+                <BsTelephone style={{ marginTop: "3px" }} />
+                <h3>Call Us</h3>
+              </div>
+              <div>
+                <a href="tel:+9014356429">
+                  <p>Tel: 901.435.6429</p>
+                </a>
+                <a href="tel:+9015124600">
+                  <p>Fax: 901.512.4600</p>
+                </a>
+              </div>
+            </div>
+            <span />
+            <div>
+              <div
+                className={utilStyles.iconHeader}
+                style={{ marginLeft: "0" }}
+              >
+                <VscMail style={{ height: "23px" }} />
+                <h3>Email Us</h3>
+              </div>
+              <div>
+                <a href="mailto:bhm@bhmenvironmental.com">
+                  <p>bhm@bhmenvironmental.com</p>
+                </a>
+                <a href="mailto:bhmlabservices@gmail.com">
+                  <p>bhmlabservices@gmail.com</p>
+                </a>
+              </div>
+            </div>
+            <span />
+            <div>
+              <div>
+                <div className={utilStyles.iconHeader}>
+                  <BsClock style={{ height: "19px", marginTop: "2px" }} />
+                  <h3>Visit Us</h3>
+                </div>
+                <div>
+                  <a
+                    target="_blank"
+                    rel="noopener"
+                    href="https://www.google.com/maps/place/BHM+Environmental+Consultants/@35.2286676,-89.8941862,18z/data=!3m1!4b1!4m5!3m4!1s0x887f7ba592907ca1:0x49dbe4a3b15a6539!8m2!3d35.2286444!4d-89.8929681"
+                  >
+                    <p>3775 Covington Pike</p>
+                    <p>Memphis, TN 38135</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div className={utilStyles.footer2}>
-          <div>Visit us</div>
+          <div>Hours</div>
         </div>
         <div className={utilStyles.footer3}>
           <p>© {year} | BH&M Environmental Consultants Memphis, Tennessee</p>
