@@ -19,7 +19,6 @@
 
 .footer {
   width: 100%;
-  border-top: 1px solid #eaeaea;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -124,13 +123,17 @@
 
 .footer3 {
   width: 100%;
-  background: rgb(0, 0, 0);
+  background: #fefeff;
   display: flex;
   justify-content: center;
-  color: rgb(230, 226, 219);
-  font-size: .9rem;
-  font-family: 'Nunito Sans', sans-serif;
+  color: #383838;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
+
+  span {
+    color: #ce2026;
+  }
 }
 
 .title a {
