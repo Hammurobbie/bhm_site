@@ -3,8 +3,8 @@ import styles from "./layout.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { BsTelephone, BsClock } from "react-icons/bs";
-import { VscMail } from "react-icons/vsc";
+import { BsTelephone } from "react-icons/bs";
+import { VscMail, VscLocation } from "react-icons/vsc";
 
 export const siteTitle = "BH&M Environmental Consulatnts, Inc";
 
@@ -43,7 +43,7 @@ export default function Layout({ children, home }) {
             <a>
               <img
                 src="/images/logo.png"
-                className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                className={styles.headerImage}
                 alt="logo"
               />
             </a>
@@ -75,7 +75,8 @@ export default function Layout({ children, home }) {
           </a>
         </Link>
       </header>
-      <main>{children}</main>
+      {route !== "" ? <div className={styles.headerBottomBorder} /> : null}
+      <main className={utilStyles.main}>{children}</main>
       {!homeCheck && (
         <div className={styles.backToHome}>
           <Link href="/">
@@ -122,7 +123,13 @@ export default function Layout({ children, home }) {
             <div>
               <div>
                 <div className={utilStyles.iconHeader}>
-                  <BsClock style={{ height: "19px", marginTop: "2px" }} />
+                  <VscLocation
+                    style={{
+                      height: "25px",
+                      marginRight: "9px",
+                      marginTop: "-1px",
+                    }}
+                  />
                   <h3>Visit Us</h3>
                 </div>
                 <div>
@@ -141,6 +148,23 @@ export default function Layout({ children, home }) {
         </div>
         <div className={utilStyles.footer2}>
           <div>Hours</div>
+          <div className={utilStyles.logosDiv}>
+            <img
+              src="/images/agc_logo.png"
+              className={styles.headerImage}
+              alt="agc logo"
+            />
+            <img
+              src="/images/isn_logo.png"
+              className={styles.headerImage}
+              alt="isn logo"
+            />
+            <img
+              src="/images/nvlap_logo.png"
+              className={styles.headerImage}
+              alt="nvlap logo"
+            />
+          </div>
         </div>
         <div className={utilStyles.footer3}>
           <p>
