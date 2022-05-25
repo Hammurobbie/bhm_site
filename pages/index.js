@@ -7,11 +7,10 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Home</title>
+        <title>BH&M | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <div className={styles.homeDiv}>
+      <section className={styles.homeCont}>
         <div className={styles.heroImage}>
           <h1 className={styles.title}>High Quality Service</h1>
           <div>
@@ -20,7 +19,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

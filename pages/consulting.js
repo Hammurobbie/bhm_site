@@ -7,8 +7,9 @@ export default function Consulting() {
   return (
     <Layout>
       <Head>
-        <title>Consulting</title>
+        <title>BH&M | Consulting</title>
       </Head>
+      <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.headingMd}>
         <h1>Consulting</h1>
       </section>

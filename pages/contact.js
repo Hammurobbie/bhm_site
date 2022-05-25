@@ -7,8 +7,9 @@ export default function Contact() {
   return (
     <Layout>
       <Head>
-        <title>Contact</title>
+        <title>BH&M | Contact</title>
       </Head>
+      <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.headingMd}>
         <ContactForm />
       </section>

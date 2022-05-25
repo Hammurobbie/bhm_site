@@ -6,10 +6,11 @@ export default function About() {
   return (
     <Layout>
       <Head>
-        <title>About</title>
+        <title>BH&M | About</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <h1>About</h1>
+      <div className={utilStyles.headerBottomBorder} />
+      <section>
+        <h1 className={utilStyles.headingMd}>About</h1>
       </section>
     </Layout>
   );

@@ -7,8 +7,9 @@ export default function Lab() {
   return (
     <Layout>
       <Head>
-        <title>Lab</title>
+        <title>BH&M | Lab</title>
       </Head>
+      <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.headingMd}>
         <h1>Lab</h1>
       </section>
