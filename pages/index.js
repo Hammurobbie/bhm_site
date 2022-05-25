@@ -13,8 +13,12 @@ export default function Home() {
 
       <div className={styles.homeDiv}>
         <div className={styles.heroImage}>
-          <h1 className={styles.title}>Welcome to BH&M</h1>
-          <p className={styles.description}>We'll fuck your bitch</p>
+          <h1 className={styles.title}>High Quality Service</h1>
+          <div>
+            <p className={styles.description}>
+              with a reputation you can depend on
+            </p>
+          </div>
         </div>
       </div>
     </Layout>

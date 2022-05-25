@@ -36,6 +36,23 @@
   width: 8rem;
 }
 
+.headerImageHidden {
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.headerImageHidden:nth-child(2) {
+  margin-left: 50px;
+}
+
+.headerImage:hover ~ .headerImageHidden {
+  opacity: 100%;
+  width: 20rem !important;
+  height: auto !important;
+  transition: 0.4s;
+}
+
 .headerBottomBorder {
   width: 100%;
   height: 5px;

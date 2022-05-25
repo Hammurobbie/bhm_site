@@ -27,8 +27,15 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 40px 20px 5px 20px;
+  justify-content: flex-end;
+  padding: 40px;
+
+  div {
+    width: 510px;
+    p {
+      margin: 0;
+    }
+  }
 }
 
 .footer {
@@ -123,23 +130,63 @@
 }
 
 .footer2 {
-  background: #413f41;
+  background: #302f30;
   color: var(--white);
   width: 100%;
+  padding: 25px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
   display: flex;
   justify-content: center;
 
   div {
-    max-width: 1040px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.hours {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 220px !important;
+  justify-content: flex-start !important;
+  
+  h3 {
+    width: 100%;
+    margin: 0 0 5px 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+  }
+
+  p {
+    margin: 0 0 12px 0;
+    width: 100%;;
+  }
+
+  svg {
+    font-size: 25px;
+    transition: 0.4s;
+    margin-right: 75px;
+  }
+
+  svg:hover {
+    transition: 0.4s;
+    color: var(--red);
   }
 }
 
 .logosDiv {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 
   img {
-    height: 50px;
+    height: 55px;
     width: auto;
+    margin: 0;
   }
 }
 
@@ -161,7 +208,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 3.25rem;
+  font-size: 3.2rem;
   color: #fefeff;
   font-family: 'Roboto' sans-serif;
   font-weight: 200;
@@ -170,11 +217,11 @@
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--white);
   font-family: 'Roboto' sans-serif;
   font-weight: 200;
-  margin: 10px 0 10px 260px;
+  text-align: end;
 }
 
 .code {
