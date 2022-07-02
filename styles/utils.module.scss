@@ -19,7 +19,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 118px;
-  transition: ease-in-out .75s;
+  transition: ease-in-out .4s;
 }
 
 .heroImage {
@@ -212,7 +212,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 20px;
-  color: var(--white);
+  color: #f5d3d3;
   background: #d02626;
 }
 
@@ -224,10 +224,11 @@
 }
 
 .missionStatement h3 {
-  color: #2f2d2f;
+  color: var(--white);
   font-size: 1.35rem;
   text-transform: uppercase;
   margin: 0 0 10px 0;
+  font-weight: 100;
 }
 
 .accolades {
@@ -237,7 +238,7 @@
   justify-content: center;
   padding: 80px;
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -259,12 +260,13 @@
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 .accolades p {
   margin: 0 0 40px 0;
   letter-spacing: .5px;
-  font-size: 1.1rem;
+  font-size: 1.09rem;
 }
 
 .accolades button {
@@ -280,7 +282,7 @@
   background: #d02626;;
   justify-content: var(--label-align);
   transition: .4s ease-in-out;
-  box-shadow: 1px 1px 5px rgba(107, 107, 107, 0.6);
+  box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.6);
   cursor: pointer;
 }
 
@@ -290,6 +292,39 @@
 
 .accolades img {
   height: 250px;
+}
+
+.clients {
+  background: var(--gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.clients h3 {
+  font-size: 1.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.clients div {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients img {
+    height: 120px;
+    width: auto;
+    margin: 20px;
 }
 
 @keyframes fromLeft {

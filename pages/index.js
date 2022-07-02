@@ -13,6 +13,7 @@ export default function Home() {
       } else if (window.scrollY < 118) {
         setScrollPos(118);
       }
+      console.log(window.scrollY);
     };
 
     document.addEventListener("scroll", handleScroll);
@@ -20,8 +21,6 @@ export default function Home() {
       document.removeEventListener("scroll", handleScroll);
     };
   }, [scrollPos]);
-
-  // console.log(scrollPos);
 
   return (
     <Layout>
@@ -65,6 +64,27 @@ export default function Home() {
               </button>
             </div>
             <img src="/images/mlgw.png" alt="mlgw"></img>
+          </div>
+        </div>
+        <div className={styles.clients}>
+          <h3>Some of our clients:</h3>
+          <div>
+            <img
+              src="/images/fhb_logo.png"
+              alt="first horizon"
+              style={{ margin: "0 20px" }}
+            ></img>
+            <img
+              src="/images/uthsc_logo.png"
+              alt="uthsc"
+              style={{ height: "95px" }}
+            ></img>
+            <img
+              src="/images/harding_logo.png"
+              alt="harding"
+              style={{ height: "55px", margin: "30px 20px" }}
+            ></img>
+            <img src="/images/msnb_logo.png" alt="navy base"></img>
           </div>
         </div>
       </section>
