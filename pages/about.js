@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -16,12 +17,10 @@ export default function About() {
             <p>
               BH&M Environmental Consultants, INC was established as a small
               business in Memphis and is continually growing far beyond the
-              Shelby County limits. With years of quality workmanship provided
-              by our certified employees in the environmental field, BH&M has
-              accrued 100+ years of experience. BH&M is also one of the few
-              existing NVLAP accredited labs(Lab #201018-0) in the state of
-              Tennessee allowing for PLM (polarized light microscopy) samples to
-              undergo thorough and accurate analysis.
+              Shelby County limits. BH&M is one of the few existing NVLAP
+              accredited labs(Lab #201018-0) in the state of Tennessee allowing
+              for PLM (polarized light microscopy) samples to undergo thorough
+              and accurate analysis.
               <br />
               <br />
               After providing ten years of service to the local community and
@@ -31,13 +30,17 @@ export default function About() {
               citizens, our communities, and our world in safer health.
             </p>
             <div className={utilStyles.aboutButtons}>
-              <button>Consulting</button>
-              <button>Labs</button>
+              <Link href="/consulting">
+                <button>Consulting</button>
+              </Link>
+              <Link href="/lab">
+                <button>Lab Services</button>
+              </Link>
             </div>
           </div>
           <div className={utilStyles.aboutImages}>
-            <img src="/images/mlgw.png" alt="mlgw"></img>
-            <img src="/images/mlgw.png" alt="mlgw"></img>
+            <img src="/images/about_1.jpeg" alt="mlgw"></img>
+            <img src="/images/about_2.jpeg" alt="mlgw"></img>
           </div>
         </div>
       </section>

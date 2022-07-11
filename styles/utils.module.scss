@@ -299,7 +299,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 116px 80px;
+  padding: 90px 80px 100px 80px;
   max-width: 1040px;
 }
 
@@ -346,13 +346,13 @@
 }
 
 .aboutLeft {
-  width: 70%;
+  width: 65%;
   padding-right: 70px;
 }
 
 .aboutLeft p {
   font-family: 'Lato', sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   margin: 2px 0;
   font-size: 1rem;
   letter-spacing: .5px;
@@ -362,12 +362,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30%;
+  align-items: center;
+  width: 35%;
 }
 
 .aboutImages img {
-  height: 150px;
-  width: auto;
+  width: 100%;
 }
 
 .clients {
