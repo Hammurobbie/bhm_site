@@ -370,6 +370,45 @@
   width: 100%;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 90px 80px 100px 80px;
+  max-width: 1040px;
+}
+
+.contact h3 {
+  font-size: 1.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.contactLeft {
+  width: 65%;
+  padding-right: 70px;
+}
+
+.contactLeft p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: .5px;
+}
+
+.contactRedP{
+  color: var(--red);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+}
+
 .clients {
   background: var(--gray);
   width: 100%;

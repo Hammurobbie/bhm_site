@@ -1,10 +1,9 @@
-import axios from "axios";
+import utilStyles from "../styles/utils.module.scss";
 
 export default function ContactForm() {
   return (
     <div>
-      <h1>Contact Us</h1>
-      <form className="signup-form">
+      <form className={utilStyles.contactForm}>
         <label htmlFor="name"></label>
         <input type="text" name="name" placeholder="Name" />
         <input type="email" name="email" placeholder="Email" />
