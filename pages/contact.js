@@ -2,8 +2,17 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import ContactForm from "../components/ContactForm";
 import utilStyles from "../styles/utils.module.scss";
+import React from "react";
+import { Map, Marker, Overlay } from "pigeon-maps";
+import { stamenToner } from "pigeon-maps/providers";
 
 export default function Contact() {
+  const handleAddressRedirect = () => {
+    const URL =
+      "https://www.google.com/maps/place/BHM+Environmental+Consultants/@35.2286676,-89.8941862,18z/data=!3m1!4b1!4m5!3m4!1s0x887f7ba592907ca1:0x49dbe4a3b15a6539!8m2!3d35.2286444!4d-89.8929681";
+    window.open(URL, "_blank");
+  };
+
   return (
     <Layout>
       <Head>
@@ -32,10 +41,41 @@ export default function Contact() {
                 bhmlabservices@gmail.com
               </a>
             </p>
+            <p className={utilStyles.contactRedP}>Address</p>
+            <p>
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.google.com/maps/place/BHM+Environmental+Consultants/@35.2286676,-89.8941862,18z/data=!3m1!4b1!4m5!3m4!1s0x887f7ba592907ca1:0x49dbe4a3b15a6539!8m2!3d35.2286444!4d-89.8929681"
+              >
+                3775 Covington Pike
+                <br />
+                Memphis, TN 38135
+              </a>
+            </p>
             <p className={utilStyles.contactRedP}>Hours</p>
             <p>Mon - Fri: 7am - 10pm</p>
           </div>
           <ContactForm />
+        </div>
+        <div className={utilStyles.map}>
+          <h4>Getting Here</h4>
+          <div>
+            <Map
+              defaultCenter={[35.2286654, -89.8930989]}
+              defaultZoom={15}
+              width={1000}
+              height={300}
+              provider={stamenToner}
+            >
+              <Marker
+                anchor={[35.2281, -89.893]}
+                payload={1}
+                onClick={handleAddressRedirect}
+                color={"#d02626"}
+              />
+            </Map>
+          </div>
         </div>
       </section>
     </Layout>

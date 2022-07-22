@@ -381,8 +381,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 90px 80px 100px 80px;
-  max-width: 1040px;
+  padding-top: 90px;
 }
 
 .contact h3 {
@@ -397,6 +396,8 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding: 0px 80px 100px 80px;
+  max-width: 1040px;
 }
 
 .contactLeft {
@@ -483,7 +484,7 @@
       font-weight: 200;
       color: var(--white);
       vertical-align: baseline;
-      background: #d02626;;
+      background: #d02626;
       transition: .4s ease-in-out;
       justify-content: var(--label-align);
       box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.6);
@@ -496,13 +497,31 @@
   }
 }
 
-.radio {
+.checkBox {
   margin-right: 10px !important;
   cursor: pointer;
 }
 
-.radio:checked {
-  background-color: rgba(213, 45, 45, 0.6);
+.checkBox:checked {
+  accent-color: var(--red);
+}
+
+.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 80px 100px 80px;
+  width: 100%;
+  background: var(--gray);
+
+  h4 {
+    color: var(--red);
+    margin-top: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
 }
 
 .clients {
