@@ -19,7 +19,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 118px;
-  transition: ease-in-out .4s;
+  transition: ease-in-out 1s;
 }
 
 .heroImage {
@@ -63,6 +63,9 @@
   justify-content: center;
   padding: 25px 0;
   
+  p > a {
+    width: auto;
+  }
 
   div {
     max-width: 1040px;
@@ -167,10 +170,13 @@
     width: 100%;;
   }
 
+  div {
+    width: 39%;
+  }
+
   svg {
     font-size: 25px;
     transition: 0.4s;
-    margin-right: 75px;
   }
 
   svg:hover {
@@ -325,7 +331,7 @@
 }
 
 .aboutButtons button {
-  width: 200px;
+  width: 40%;
   border: none;
   font-size: .9rem;
   padding: 10px;
@@ -335,8 +341,8 @@
   text-transform: uppercase;
   vertical-align: baseline;
   background: #d02626;;
-  justify-content: var(--label-align);
   transition: .4s ease-in-out;
+  justify-content: var(--label-align);
   box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.6);
   cursor: pointer;
 }
@@ -387,8 +393,13 @@
   text-transform: uppercase;
 }
 
+.contactInner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .contactLeft {
-  width: 65%;
   padding-right: 70px;
 }
 
@@ -401,12 +412,97 @@
 }
 
 .contactRedP{
-  color: var(--red);
+  color: #d02626;
+  font-weight: 400 !important;
+  margin-top: 20px !important;
+}
+
+.contactLeft p > a {
+  cursor: pointer;
+  transition: .4s ease-in-out;
+  width: auto;
+}
+
+.contactLeft p > a:hover {
+  color: #d02626;
+  transition: .4s ease-in-out;
+}
+
+.contactRedP:first-child{
+  margin-top: 0 !important;
 }
 
 .contactForm {
-  display: flex;
-  flex-direction: column;
+  width: 60%;
+
+  form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1.15rem;
+
+    div:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    input {
+      padding: 8px 10px;
+      margin: 7px 0 14px 0;
+    }
+
+    input:focus {
+      outline: none;
+      border: 2px solid var(--red);
+      background: #faf9f9;
+    }
+
+    textarea {
+      height: 120px;
+      resize: none;
+      padding: 8px 10px;
+      margin: 7px 0 14px 0;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
+      font-size: .8rem;
+    }
+
+    textarea:focus {
+      outline: none;
+      border: 1px solid var(--red);
+      background: #faf9f9;
+    }
+  
+    button {
+      min-width: 100px;
+      border: none;
+      font-size: .9rem;
+      padding: 5px 45px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 200;
+      color: var(--white);
+      vertical-align: baseline;
+      background: #d02626;;
+      transition: .4s ease-in-out;
+      justify-content: var(--label-align);
+      box-shadow: 1px 1px 2px rgba(107, 107, 107, 0.6);
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background: #ad2626;
+    }
+  }
+}
+
+.radio {
+  margin-right: 10px !important;
+  cursor: pointer;
+}
+
+.radio:checked {
+  background-color: rgba(213, 45, 45, 0.6);
 }
 
 .clients {

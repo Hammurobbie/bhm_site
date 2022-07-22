@@ -105,12 +105,12 @@ export default function PageTransition({ children }) {
                 <h3>Call Us</h3>
               </div>
               <div>
-                <a href="tel:+9014356429">
-                  <p>Tel: 901.435.6429</p>
-                </a>
-                <a href="tel:+9015124600">
-                  <p>Fax: 901.512.4600</p>
-                </a>
+                <p>
+                  <a href="tel:+9014356429">Tel: 901.435.6429</a>
+                </p>
+                <p>
+                  <a href="tel:+9015124600">Fax: 901.512.4600</a>
+                </p>
               </div>
             </div>
             <span />
@@ -120,12 +120,16 @@ export default function PageTransition({ children }) {
                 <h3>Email Us</h3>
               </div>
               <div>
-                <a href="mailto:bhm@bhmenvironmental.com">
-                  <p>bhm@bhmenvironmental.com</p>
-                </a>
-                <a href="mailto:bhmlabservices@gmail.com">
-                  <p>bhmlabservices@gmail.com</p>
-                </a>
+                <p>
+                  <a href="mailto:bhm@bhmenvironmental.com">
+                    bhm@bhmenvironmental.com
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:bhmlabservices@gmail.com">
+                    bhmlabservices@gmail.com
+                  </a>
+                </p>
               </div>
             </div>
             <span />
@@ -142,14 +146,17 @@ export default function PageTransition({ children }) {
                   <h3>Visit Us</h3>
                 </div>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener"
-                    href="https://www.google.com/maps/place/BHM+Environmental+Consultants/@35.2286676,-89.8941862,18z/data=!3m1!4b1!4m5!3m4!1s0x887f7ba592907ca1:0x49dbe4a3b15a6539!8m2!3d35.2286444!4d-89.8929681"
-                  >
-                    <p>3775 Covington Pike</p>
-                    <p>Memphis, TN 38135</p>
-                  </a>
+                  <p>
+                    <a
+                      target="_blank"
+                      rel="noopener"
+                      href="https://www.google.com/maps/place/BHM+Environmental+Consultants/@35.2286676,-89.8941862,18z/data=!3m1!4b1!4m5!3m4!1s0x887f7ba592907ca1:0x49dbe4a3b15a6539!8m2!3d35.2286444!4d-89.8929681"
+                    >
+                      3775 Covington Pike
+                      <br />
+                      Memphis, TN 38135
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -160,20 +167,24 @@ export default function PageTransition({ children }) {
             <div className={styles.hours}>
               <h3>Hours:</h3>
               <p>7AM - 4PM | M - F</p>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://www.linkedin.com/company/bh&m-environmental-consultants-inc./mycompany/"
-              >
-                <BsLinkedin />
-              </a>
-              <a
-                target="_blank"
-                rel="noopener"
-                href="https://www.google.com/search?q=bh%26m+environmental+inc+memphis%2C+tn&sxsrf=ALiCzsZWSxT1YUwamhO_paIHvqWj5Wmu9A%3A1653438561509&ei=YXiNYvCfHoufqtsP9fucmA4&ved=0ahUKEwiw1PbQsvn3AhWLj2oFHfU9B-MQ4dUDCA4&uact=5&oq=bh%26m+environmental+inc+memphis%2C+tn&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKsCOgcIIxCwAxAnOgcIABBHELADOgUIABCiBDoFCCEQoAFKBAhBGABKBAhGGABQ5wtY93Jg0XloBnABeACAAW2IAcYLkgEEMTIuNJgBAKABAcgBA8ABAQ&sclient=gws-wiz#lrd=0x887f7ba592907ca1:0x49dbe4a3b15a6539,1,,,"
-              >
-                <ImGoogle2 />
-              </a>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.linkedin.com/company/bh&m-environmental-consultants-inc./mycompany/"
+                >
+                  <BsLinkedin />
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.google.com/search?q=bh%26m+environmental+inc+memphis%2C+tn&sxsrf=ALiCzsZWSxT1YUwamhO_paIHvqWj5Wmu9A%3A1653438561509&ei=YXiNYvCfHoufqtsP9fucmA4&ved=0ahUKEwiw1PbQsvn3AhWLj2oFHfU9B-MQ4dUDCA4&uact=5&oq=bh%26m+environmental+inc+memphis%2C+tn&gs_lcp=Cgdnd3Mtd2l6EAMyBQghEKsCOgcIIxCwAxAnOgcIABBHELADOgUIABCiBDoFCCEQoAFKBAhBGABKBAhGGABQ5wtY93Jg0XloBnABeACAAW2IAcYLkgEEMTIuNJgBAKABAcgBA8ABAQ&sclient=gws-wiz#lrd=0x887f7ba592907ca1:0x49dbe4a3b15a6539,1,,,"
+                >
+                  <ImGoogle2 />
+                </a>
+              </div>
             </div>
             <div id="logosDiv" className={styles.logosDiv}>
               <span>
