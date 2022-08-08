@@ -15,13 +15,11 @@ export default function PageTransition({ children }) {
   const year = new Date().getFullYear();
 
   useEffect(() => {
-    console.log(children.type.name, displayChildren.type.name);
     if (transitionStage === "init") {
       setTimeout(() => {
         setTransitionStage("in");
       }, 500);
-    } else if (children.type.name !== displayChildren.type.name)
-      setTransitionStage("out");
+    } else if (children !== displayChildren) setTransitionStage("out");
   }, [children, setDisplayChildren, displayChildren]);
 
   return (
