@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
-// import { TbMicroscope } from "react-icons/tb";
 import { ImLab } from "react-icons/im";
 
 export default function Lab() {
