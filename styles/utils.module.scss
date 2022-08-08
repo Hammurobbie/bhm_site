@@ -32,7 +32,7 @@
   padding: 40px;
 
   div {
-    width: 510px;
+    width: 550px;
     p {
       margin: 0;
     }
@@ -623,6 +623,100 @@
     font-weight: 300;
     font-size: 1.5rem;
   }
+}
+
+.lab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 90px;
+}
+
+.lab h3 {
+  font-size: 1.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.labCont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 1.05rem;
+  max-width: 1040px;
+  text-align: center;
+}
+
+.consulting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 90px;
+}
+
+.consulting h3 {
+  font-size: 1.75rem;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.consultingCont {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  font-size: 1.05rem;
+  max-width: 1040px;
+  text-align: center;
+}
+
+.consultingGrid, .labGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 860px;
+  margin-bottom: 50px;
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 40px 15px;
+  }
+
+  svg {
+    color: var(--red);
+    height: 70px;
+    width: auto;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
+.labGrid svg {
+  height: 50px;
+  margin-bottom: 10px;
 }
 
 @keyframes fromLeft {
