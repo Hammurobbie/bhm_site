@@ -19,7 +19,8 @@ export default function PageTransition({ children }) {
       setTimeout(() => {
         setTransitionStage("in");
       }, 500);
-    } else if (children !== displayChildren) setTransitionStage("out");
+    } else if (children.type !== displayChildren.type)
+      setTransitionStage("out");
   }, [children, setDisplayChildren, displayChildren]);
 
   return (
