@@ -13,7 +13,6 @@ export default function Home() {
       } else if (window.scrollY < 118) {
         setScrollPos(118);
       }
-      console.log(window.scrollY);
     };
 
     document.addEventListener("scroll", handleScroll);
