@@ -145,8 +145,9 @@ export default function ContactForm() {
         )}
         <input
           className={
-            errorMessages.includes("Please include a first name") &&
-            utilStyles.errorBorder
+            errorMessages.includes("Please include a first name")
+              ? utilStyles.errorBorder
+              : ""
           }
           type="text"
           name="firstName"
