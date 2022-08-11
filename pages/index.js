@@ -59,7 +59,13 @@ export default function Home() {
                 with MLGW.
               </p>
               <button>
-                <a>Read More</a>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  href="https://www.mlgw.com/news/flame-and-spark-awards-dec-2016"
+                >
+                  Read More
+                </a>
               </button>
             </div>
             <img src="/images/mlgw.png" alt="mlgw"></img>

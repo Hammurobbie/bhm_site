@@ -171,7 +171,7 @@ export default function PageTransition({ children }) {
                 <a
                   target="_blank"
                   rel="noopener"
-                  href="https://www.linkedin.com/company/bh&m-environmental-consultants-inc./mycompany/"
+                  href="https://www.linkedin.com/company/bh&m-environmental-consultants-inc./about/"
                 >
                   <BsLinkedin />
                 </a>
