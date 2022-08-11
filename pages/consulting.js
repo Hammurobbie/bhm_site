@@ -22,54 +22,54 @@ export default function Consulting() {
               <RiLungsLine />
               <h4>Indoor Air Quality</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
             <div>
               <RiLungsLine />
               <h4>Mold Testing</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
             <div>
               <RiLungsLine />
               <h4>Lead-Based Paint</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
             <div>
               <RiLungsLine />
               <h4>Asbestos</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
             <div>
               <RiLungsLine />
               <h4>Industrial Hygiene</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
             <div>
               <RiLungsLine />
               <h4>Environmental</h4>
               <p>
-                I'm a paragraph. Click here to add your own text and edit me.
-                It’s easy. Just click “Edit Text” or double click me to add your
-                own content and make changes to the font.
+                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
+                vulputate eu.
               </p>
             </div>
           </div>
