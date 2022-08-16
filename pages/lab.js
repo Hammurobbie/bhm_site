@@ -14,8 +14,10 @@ export default function Lab() {
         <h3>Lab Services</h3>
         <div className={utilStyles.labCont}>
           <p>
-            As a multifaceted environmental consulting firm, BH&M offers a wide
-            range of services. Some of these services include:
+            BH&M is one of the few existing NVLAP accredited labs(Lab #201018-0)
+            in the state of Tennessee allowing for PLM (polarized light
+            microscopy) samples to undergo thorough and accurate analysis. Some
+            of our lab services include:
           </p>
           <div className={utilStyles.labGrid}>
             <div>

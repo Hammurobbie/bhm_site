@@ -17,17 +17,18 @@ export default function About() {
             <p>
               BH&M Environmental Consultants, INC was established as a small
               business in Memphis and is continually growing far beyond the
-              Shelby County limits. BH&M is one of the few existing NVLAP
-              accredited labs(Lab #201018-0) in the state of Tennessee allowing
-              for PLM (polarized light microscopy) samples to undergo thorough
-              and accurate analysis.
+              Shelby County limits. BH&M has accrued 100+ years of combined
+              experience by providing quality consulting to each of their
+              clients. In addition, BH&M boasts one of the few existing NVLAP
+              accredited laboratories in the state of Tennessee where their
+              analysts are able to process asbestos and lead samples.
               <br />
               <br />
-              After providing ten years of service to the local community and
-              other regions outside of Tennessee our mission remains the same;
-              aiming to provide nothing short of exceptional services that fall
-              in line with and enforce environmental regulations to keep our
-              citizens, our communities, and our world in safer health.
+              After providing years of service to the local community and other
+              regions outside of Tennessee our mission remains the same; aiming
+              to provide nothing short of exceptional services that fall in line
+              with and enforce environmental regulations to keep our citizens,
+              our communities, and our world in safer health.
             </p>
             <div className={utilStyles.aboutButtons}>
               <Link href="/consulting">
