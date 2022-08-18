@@ -20,9 +20,10 @@ export default function PageTransition({ children }) {
       setTimeout(() => {
         setTransitionStage("in");
       }, 500);
-    } else if (children.type !== displayChildren.type)
+    } else if (children.type !== displayChildren.type) {
       setTransitionStage("out");
-    setBackgroundTrans(true);
+      setBackgroundTrans(true);
+    }
   }, [children, setDisplayChildren, displayChildren]);
 
   return (
