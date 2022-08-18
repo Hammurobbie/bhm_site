@@ -797,7 +797,23 @@
 // page transitions
 
 .content {
+  position: relative;
+}
+
+.contentInner {
   transition: 1s ease-in-out;
+}
+
+.backgroundDiv {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  opacity: 1;
+  animation: fadeIn 4s; 
+}
+
+.backgroundDiv .title, .backgroundDiv .description {
+  display: none;
 }
 
 .initContent {
@@ -812,6 +828,12 @@
 
 .out {
   opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  10% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 @media (max-width: 600px) {

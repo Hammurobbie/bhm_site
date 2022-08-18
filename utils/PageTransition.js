@@ -10,6 +10,7 @@ import { ImGoogle2 } from "react-icons/im";
 export default function PageTransition({ children }) {
   const [displayChildren, setDisplayChildren] = useState(children);
   const [transitionStage, setTransitionStage] = useState("init");
+  const [backgroundTrans, setBackgroundTrans] = useState(false);
 
   const route = useRouter().pathname.substring(1);
   const year = new Date().getFullYear();
@@ -21,6 +22,7 @@ export default function PageTransition({ children }) {
       }, 500);
     } else if (children.type !== displayChildren.type)
       setTransitionStage("out");
+    setBackgroundTrans(true);
   }, [children, setDisplayChildren, displayChildren]);
 
   return (
@@ -85,16 +87,24 @@ export default function PageTransition({ children }) {
           </Link>
         </div>
       </header>
-      <div
-        onTransitionEnd={() => {
-          if (transitionStage === "out") {
-            setDisplayChildren(children);
-            setTransitionStage("in");
-          }
-        }}
-        className={`${styles.content} ${styles[transitionStage]}`}
-      >
-        {displayChildren}
+      <div className={styles.content}>
+        <div
+          onTransitionEnd={() => {
+            if (transitionStage === "out") {
+              setDisplayChildren(children);
+              setTransitionStage("in");
+              setTimeout(() => {
+                setBackgroundTrans(false);
+              }, 1000);
+            }
+          }}
+          className={`${styles.contentInner} ${styles[transitionStage]}`}
+        >
+          {displayChildren}
+        </div>
+        {backgroundTrans ? (
+          <div className={styles.backgroundDiv}>{children}</div>
+        ) : null}
       </div>
       <footer className={styles.footer}>
         <div className={styles.footer1}>

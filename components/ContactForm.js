@@ -161,8 +161,9 @@ export default function ContactForm() {
         )}
         <input
           className={
-            errorMessages.includes("Please include a last name") &&
-            utilStyles.errorBorder
+            errorMessages.includes("Please include a last name")
+              ? utilStyles.errorBorder
+              : ""
           }
           type="text"
           name="lastName"
@@ -176,8 +177,9 @@ export default function ContactForm() {
         )}
         <input
           className={
-            errorMessages.includes("Please include a subject") &&
-            utilStyles.errorBorder
+            errorMessages.includes("Please include a subject")
+              ? utilStyles.errorBorder
+              : ""
           }
           type="text"
           name="subject"
@@ -191,8 +193,9 @@ export default function ContactForm() {
         )}
         <textarea
           className={
-            errorMessages.includes("Please include a message") &&
-            utilStyles.errorBorder
+            errorMessages.includes("Please include a message")
+              ? utilStyles.errorBorder
+              : ""
           }
           type="text"
           name="message"
