@@ -41,11 +41,10 @@ export default function Lab() {
             <div>
               <ImLab />
               <h4>Lead-Based Paint</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>Lead Clearance Sampling</li>
+                <li>Flame Atomic Absorption analysis</li>
+              </ul>
             </div>
             <div>
               <ImLab />

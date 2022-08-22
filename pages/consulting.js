@@ -39,11 +39,11 @@ export default function Consulting() {
             <div>
               <RiLungsLine />
               <h4>Lead-Based Paint</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>Lead Inspections</li>
+                <li>Lead Abatement Oversight</li>
+                <li>Lead Air Monitoring</li>
+              </ul>
             </div>
             <div>
               <RiLungsLine />
