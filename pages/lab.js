@@ -23,55 +23,37 @@ export default function Lab() {
             <div>
               <ImLab />
               <h4>Indoor Air Quality</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <p>I'm a paragraph. I need to be reviewed for content.</p>
             </div>
             <div>
               <ImLab />
               <h4>Mold Testing</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <p>I'm a paragraph. I need to be reviewed for content.</p>
             </div>
             <div>
               <ImLab />
               <h4>Lead-Based Paint</h4>
               <ul>
-                <li>Lead Clearance Sampling</li>
-                <li>Flame Atomic Absorption analysis</li>
+                <li>- Flame Atomic Absorption (FAA) Analysis</li>
               </ul>
             </div>
             <div>
               <ImLab />
               <h4>Asbestos</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Polarized Light Microscopy (PLM) Analysis</li>
+                <li>- Phase Contrast Microscopy (PCM) Analysis</li>
+              </ul>
             </div>
             <div>
               <ImLab />
               <h4>Industrial Hygiene</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <p>I'm a paragraph. I need to be reviewed for content.</p>
             </div>
             <div>
               <ImLab />
               <h4>Environmental</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <p>I'm a paragraph. I need to be reviewed for content.</p>
             </div>
           </div>
         </div>

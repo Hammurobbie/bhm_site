@@ -21,56 +21,61 @@ export default function Consulting() {
             <div>
               <RiLungsLine />
               <h4>Indoor Air Quality</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Project Management & Monitoring</li>
+                <li>- Air Quality Inspections & Sampling</li>
+              </ul>
             </div>
             <div>
               <RiLungsLine />
               <h4>Mold Testing</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Mold Inspections</li>
+                <li>- Mold Sampling</li>
+              </ul>
             </div>
             <div>
               <RiLungsLine />
               <h4>Lead-Based Paint</h4>
               <ul>
-                <li>Lead Inspections</li>
-                <li>Lead Abatement Oversight</li>
-                <li>Lead Air Monitoring</li>
+                <li>- Lead Inspections</li>
+                <li>- Lead Abatement Oversight</li>
+                <li>- Lead Air Monitoring</li>
               </ul>
             </div>
             <div>
               <RiLungsLine />
               <h4>Asbestos</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Building Inspections</li>
+                <li>- PLM Surveys / Asbestos Bulk Sampling</li>
+                <li>- Operations & Management Plans</li>
+                <li>- Abatement Design & Specifications</li>
+                <li>- Project Management & Monitoring</li>
+                <li>- Asbestos Air Monitoring & Clearance Samples</li>
+              </ul>
             </div>
             <div>
               <RiLungsLine />
               <h4>Industrial Hygiene</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Safety Data Sheet (SDS) Review</li>
+                <li>- Sampling</li>
+                <li>- Initial Hazardous Chemical Exposure Monitoring</li>
+                <li>- Silica Testing</li>
+                <li>- Radon Testing</li>
+                <li>- HAZWOPER Training</li>
+              </ul>
             </div>
             <div>
               <RiLungsLine />
               <h4>Environmental</h4>
-              <p>
-                I'm a paragraph. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Proin pellentesque urna sem, a facilisis mauris
-                vulputate eu.
-              </p>
+              <ul>
+                <li>- Phase I Environmental Site Assessments</li>
+                <li>- Wetland Delineation</li>
+                <li>- Endangered Species Investigation</li>
+                <li>- Environmental Protection Plans</li>
+              </ul>
             </div>
           </div>
         </div>
