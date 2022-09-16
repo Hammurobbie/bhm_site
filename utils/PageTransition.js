@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 import { BsTelephone, BsLinkedin } from "react-icons/bs";
 import { VscMail, VscLocation } from "react-icons/vsc";
 import { ImGoogle2 } from "react-icons/im";
+import { motion } from "framer-motion";
 
 export default function PageTransition({ children }) {
   const [displayChildren, setDisplayChildren] = useState(children);
@@ -26,6 +27,15 @@ export default function PageTransition({ children }) {
     }
   }, [children, setDisplayChildren, displayChildren]);
 
+  const itemVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 25 },
+    },
+    closed: { opacity: 0, y: -30, transition: { duration: 5 } },
+  };
+
   return (
     <div
       className={`${styles.initContent} ${
@@ -33,8 +43,29 @@ export default function PageTransition({ children }) {
       }`}
     >
       <header className={headerStyles.header}>
-        <div>
-          <>
+        <motion.div
+          initial="closed"
+          animate="open"
+          variants={{
+            open: {
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 2,
+                delayChildren: 0.3,
+                staggerChildren: 0.1,
+              },
+            },
+            closed: {
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.3,
+              },
+            },
+          }}
+        >
+          <motion.span variants={itemVariants}>
             <Link href="/">
               <a>
                 <img
@@ -44,49 +75,61 @@ export default function PageTransition({ children }) {
                 />
               </a>
             </Link>
-          </>
-          <Link href="/">
-            <a className={route === "" ? headerStyles.curPageColor : undefined}>
-              home
-            </a>
-          </Link>
-          <Link href="/consulting">
-            <a
-              className={
-                route === "consulting" ? headerStyles.curPageColor : undefined
-              }
-            >
-              consulting
-            </a>
-          </Link>
-          <Link href="/lab">
-            <a
-              className={
-                route === "lab" ? headerStyles.curPageColor : undefined
-              }
-            >
-              lab
-            </a>
-          </Link>
-          <Link href="/contact">
-            <a
-              className={
-                route === "contact" ? headerStyles.curPageColor : undefined
-              }
-            >
-              contact
-            </a>
-          </Link>
-          <Link href="/about">
-            <a
-              className={
-                route === "about" ? headerStyles.curPageColor : undefined
-              }
-            >
-              about
-            </a>
-          </Link>
-        </div>
+          </motion.span>
+          <motion.span variants={itemVariants}>
+            <Link href="/">
+              <a
+                className={route === "" ? headerStyles.curPageColor : undefined}
+              >
+                home
+              </a>
+            </Link>
+          </motion.span>
+          <motion.span variants={itemVariants}>
+            <Link href="/consulting">
+              <a
+                className={
+                  route === "consulting" ? headerStyles.curPageColor : undefined
+                }
+              >
+                consulting
+              </a>
+            </Link>
+          </motion.span>
+          <motion.span variants={itemVariants}>
+            <Link href="/lab">
+              <a
+                className={
+                  route === "lab" ? headerStyles.curPageColor : undefined
+                }
+              >
+                lab
+              </a>
+            </Link>
+          </motion.span>
+          <motion.span variants={itemVariants}>
+            <Link href="/contact">
+              <a
+                className={
+                  route === "contact" ? headerStyles.curPageColor : undefined
+                }
+              >
+                contact
+              </a>
+            </Link>
+          </motion.span>
+          <motion.span variants={itemVariants}>
+            <Link href="/about">
+              <a
+                className={
+                  route === "about" ? headerStyles.curPageColor : undefined
+                }
+              >
+                about
+              </a>
+            </Link>
+          </motion.span>
+        </motion.div>
       </header>
       <div className={styles.content}>
         <div

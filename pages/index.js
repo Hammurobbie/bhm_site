@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 import Layout from "../components/layout";
 import styles from "../styles/utils.module.scss";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [scrollPos, setScrollPos] = useState(118);
@@ -40,7 +41,13 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.missionStatement}>
-          <h3>Our Mission Statement</h3>
+          <motion.h3
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            Our Mission Statement
+          </motion.h3>
           <p>
             “It is our mission to exemplify and maintain our reputation as a
             fair, reliable, and environmentally conscience company so our
