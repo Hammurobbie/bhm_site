@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
 import { RiLungsLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 
 export default function Consulting() {
   return (
@@ -11,7 +12,12 @@ export default function Consulting() {
       </Head>
       <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.consulting}>
-        <h3>Consulting</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 2 } }}
+        >
+          Consulting
+        </motion.h3>
         <div className={utilStyles.consultingCont}>
           <p>
             As a multifaceted environmental consulting firm, BH&M offers a wide

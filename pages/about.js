@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
@@ -11,7 +12,12 @@ export default function About() {
       </Head>
       <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.about}>
-        <h3>About Us</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 2 } }}
+        >
+          About Us
+        </motion.h3>
         <div className={utilStyles.aboutInner}>
           <div className={utilStyles.aboutLeft}>
             <p>

@@ -9,23 +9,8 @@ import { ImGoogle2 } from "react-icons/im";
 import { motion } from "framer-motion";
 
 export default function PageTransition({ children }) {
-  const [displayChildren, setDisplayChildren] = useState(children);
-  const [transitionStage, setTransitionStage] = useState("init");
-  const [backgroundTrans, setBackgroundTrans] = useState(false);
-
   const route = useRouter().pathname.substring(1);
   const year = new Date().getFullYear();
-
-  useEffect(() => {
-    if (transitionStage === "init") {
-      setTimeout(() => {
-        setTransitionStage("in");
-      }, 500);
-    } else if (children.type !== displayChildren.type) {
-      setTransitionStage("out");
-      setBackgroundTrans(true);
-    }
-  }, [children, setDisplayChildren, displayChildren]);
 
   const itemVariants = {
     open: {
@@ -37,11 +22,7 @@ export default function PageTransition({ children }) {
   };
 
   return (
-    <div
-      className={`${styles.initContent} ${
-        transitionStage === "init" ? styles.out : styles.in
-      }`}
-    >
+    <div className={styles.initContent}>
       <header className={headerStyles.header}>
         <motion.div
           initial="closed"
@@ -132,23 +113,7 @@ export default function PageTransition({ children }) {
         </motion.div>
       </header>
       <div className={styles.content}>
-        <div
-          onTransitionEnd={() => {
-            if (transitionStage === "out") {
-              setDisplayChildren(children);
-              setTransitionStage("in");
-              setTimeout(() => {
-                setBackgroundTrans(false);
-              }, 1000);
-            }
-          }}
-          className={`${styles.contentInner} ${styles[transitionStage]}`}
-        >
-          {displayChildren}
-        </div>
-        {backgroundTrans ? (
-          <div className={styles.backgroundDiv}>{children}</div>
-        ) : null}
+        <div className={styles.contentInner}>{children}</div>
       </div>
       <footer className={styles.footer}>
         <div className={styles.footer1}>

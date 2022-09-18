@@ -795,48 +795,6 @@
   height: 1em;
 }
 
-// page transitions
-
-.content {
-  position: relative;
-}
-
-.contentInner {
-  transition: 1s ease-in-out;
-}
-
-.backgroundDiv {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  opacity: 1;
-  animation: fadeIn 4s; 
-}
-
-.backgroundDiv .title, .backgroundDiv .description {
-  display: none;
-}
-
-.initContent {
-  transition: 2.5s ease-in-out;
-  overflow: hidden;
-  position: relative;
-}
-
-.in {
-  opacity: 1;
-}
-
-.out {
-  opacity: 1;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  10% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;

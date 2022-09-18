@@ -5,6 +5,7 @@ import utilStyles from "../styles/utils.module.scss";
 import React from "react";
 import { Map, Marker, Overlay } from "pigeon-maps";
 import { stamenToner } from "pigeon-maps/providers";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const handleAddressRedirect = () => {
@@ -20,7 +21,12 @@ export default function Contact() {
       </Head>
       <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.contact}>
-        <h3>Contact Us</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 2 } }}
+        >
+          Contact Us
+        </motion.h3>
         <div className={utilStyles.contactInner}>
           <div className={utilStyles.contactLeft}>
             <p className={utilStyles.contactRedP}>Telephone</p>

@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
 import { ImLab } from "react-icons/im";
+import { motion } from "framer-motion";
 
 export default function Lab() {
   return (
@@ -11,7 +12,12 @@ export default function Lab() {
       </Head>
       <div className={utilStyles.headerBottomBorder} />
       <section className={utilStyles.lab}>
-        <h3>Lab Services</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { duration: 2 } }}
+        >
+          Lab Services
+        </motion.h3>
         <div className={utilStyles.labCont}>
           <p>
             BH&M is one of the few existing NVLAP accredited labs(Lab #201018-0)
