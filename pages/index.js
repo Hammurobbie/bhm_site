@@ -37,8 +37,6 @@ export default function Home() {
     };
   }, [scrollPos]);
 
-  console.log(windH, acc?.offsetTop + acc?.offsetHeight - 180);
-
   const hide = {
     opacity: 0,
     y: -20,

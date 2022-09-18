@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import styles from "../styles/utils.module.scss";
 import headerStyles from "../components/layout.module.scss";
 import Link from "next/link";
