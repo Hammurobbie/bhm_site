@@ -111,7 +111,7 @@ export default function Home() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0, duration: 2 }}
+          transition={{ delay: 0, duration: 1.5 }}
           className={styles.missionStatement}
         >
           <h3>Our Mission Statement</h3>
@@ -167,7 +167,7 @@ export default function Home() {
           <motion.h3
             initial={hide}
             animate={
-              windH >= cli?.offsetTop + cli?.offsetHeight - 180 ||
+              windH >= cli?.offsetTop + cli?.offsetHeight - 280 ||
               scrollPos2 >= cli?.offsetTop - cli?.offsetHeight - 110
                 ? show
                 : hide
@@ -179,7 +179,7 @@ export default function Home() {
             <motion.img
               initial={hide}
               animate={
-                windH >= cli?.offsetTop + cli?.offsetHeight - 180 ||
+                windH >= cli?.offsetTop + cli?.offsetHeight - 280 ||
                 scrollPos2 >= cli?.offsetTop - cli?.offsetHeight - 110
                   ? show2
                   : hide
@@ -191,7 +191,7 @@ export default function Home() {
             <motion.img
               initial={hide}
               animate={
-                windH >= cli?.offsetTop + cli?.offsetHeight - 180 ||
+                windH >= cli?.offsetTop + cli?.offsetHeight - 280 ||
                 scrollPos2 >= cli?.offsetTop - cli?.offsetHeight - 110
                   ? show3
                   : hide
@@ -203,7 +203,7 @@ export default function Home() {
             <motion.img
               initial={hide}
               animate={
-                windH >= cli?.offsetTop + cli?.offsetHeight - 180 ||
+                windH >= cli?.offsetTop + cli?.offsetHeight - 280 ||
                 scrollPos2 >= cli?.offsetTop - cli?.offsetHeight - 110
                   ? show4
                   : hide
@@ -215,7 +215,7 @@ export default function Home() {
             <motion.img
               initial={hide}
               animate={
-                windH >= cli?.offsetTop + cli?.offsetHeight - 180 ||
+                windH >= cli?.offsetTop + cli?.offsetHeight - 280 ||
                 scrollPos2 >= cli?.offsetTop - cli?.offsetHeight - 110
                   ? show5
                   : hide

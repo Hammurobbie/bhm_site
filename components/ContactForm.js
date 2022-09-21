@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import utilStyles from "../styles/utils.module.scss";
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   const defaultFormValues = {
@@ -137,7 +138,12 @@ export default function ContactForm() {
   };
 
   return (
-    <div className={utilStyles.contactForm}>
+    <motion.div
+      className={utilStyles.contactForm}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 1 }}
+    >
       <form onSubmit={validate}>
         <label htmlFor="firstName">First Name</label>
         {errorMessages.includes("Please include a first name") && (
@@ -244,6 +250,6 @@ export default function ContactForm() {
           <button type="submit">Submit</button>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 }

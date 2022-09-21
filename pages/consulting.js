@@ -5,6 +5,15 @@ import { RiLungsLine } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 export default function Consulting() {
+  const itemVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 25 },
+    },
+    closed: { opacity: 0, y: -30, transition: { duration: 2 } },
+  };
+
   return (
     <Layout>
       <Head>
@@ -14,33 +23,60 @@ export default function Consulting() {
       <section className={utilStyles.consulting}>
         <motion.h3
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 2 } }}
+          animate={{ opacity: 1, transition: { duration: 2.5 } }}
         >
           Consulting
         </motion.h3>
         <div className={utilStyles.consultingCont}>
-          <p>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 1.25, delay: 0.3 } }}
+          >
             As a multifaceted environmental consulting firm, BH&M offers a wide
             range of services. Some of these services include:
-          </p>
-          <div className={utilStyles.consultingGrid}>
-            <div>
+          </motion.p>
+          <motion.div
+            className={utilStyles.consultingGrid}
+            initial="closed"
+            animate="open"
+            variants={{
+              open: {
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 2,
+                  delayChildren: 0.5,
+                  staggerChildren: 0.15,
+                },
+              },
+              closed: {
+                opacity: 0,
+                transition: {
+                  type: "spring",
+                  bounce: 0,
+                  duration: 2,
+                },
+              },
+            }}
+          >
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Indoor Air Quality</h4>
               <ul>
                 <li>- Project Management & Monitoring</li>
                 <li>- Air Quality Inspections & Sampling</li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Mold Testing</h4>
               <ul>
                 <li>- Mold Inspections</li>
                 <li>- Mold Sampling</li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Lead-Based Paint</h4>
               <ul>
@@ -48,8 +84,8 @@ export default function Consulting() {
                 <li>- Lead Abatement Oversight</li>
                 <li>- Lead Air Monitoring</li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Asbestos</h4>
               <ul>
@@ -60,8 +96,8 @@ export default function Consulting() {
                 <li>- Project Management & Monitoring</li>
                 <li>- Asbestos Air Monitoring & Clearance Samples</li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Industrial Hygiene</h4>
               <ul>
@@ -72,8 +108,8 @@ export default function Consulting() {
                 <li>- Radon Testing</li>
                 <li>- HAZWOPER Training</li>
               </ul>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={itemVariants}>
               <RiLungsLine />
               <h4>Environmental</h4>
               <ul>
@@ -82,8 +118,8 @@ export default function Consulting() {
                 <li>- Endangered Species Investigation</li>
                 <li>- Environmental Protection Plans</li>
               </ul>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </Layout>

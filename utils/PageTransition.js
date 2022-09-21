@@ -115,7 +115,12 @@ export default function PageTransition({ children }) {
         <div className={styles.contentInner}>{children}</div>
       </div>
       <footer className={styles.footer}>
-        <div className={styles.footer1}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0, duration: 1.5 }}
+          className={styles.footer1}
+        >
           <div>
             <div>
               <div className={styles.iconHeader}>
@@ -179,8 +184,13 @@ export default function PageTransition({ children }) {
               </div>
             </div>
           </div>
-        </div>
-        <div className={styles.footer2}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1.25 }}
+          className={styles.footer2}
+        >
           <div>
             <div className={styles.hours}>
               <h3>Hours:</h3>
@@ -256,13 +266,18 @@ export default function PageTransition({ children }) {
               </span>
             </div>
           </div>
-        </div>
-        <div className={styles.footer3}>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+          className={styles.footer3}
+        >
           <p>
             <span>Copyright © {year} |</span> BH&M Environmental Consultants
             Memphis, Tennessee
           </p>
-        </div>
+        </motion.div>
       </footer>
     </div>
   );

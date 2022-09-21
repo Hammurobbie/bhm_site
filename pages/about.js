@@ -19,7 +19,12 @@ export default function About() {
           About Us
         </motion.h3>
         <div className={utilStyles.aboutInner}>
-          <div className={utilStyles.aboutLeft}>
+          <motion.div
+            className={utilStyles.aboutLeft}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1, duration: 1.5 }}
+          >
             <p>
               BH&M Environmental Consultants, INC was established as a small
               business in Memphis and is continually growing far beyond the
@@ -44,11 +49,16 @@ export default function About() {
                 <button>Lab Services</button>
               </Link>
             </div>
-          </div>
-          <div className={utilStyles.aboutImages}>
+          </motion.div>
+          <motion.div
+            className={utilStyles.aboutImages}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5, duration: 1.2 }}
+          >
             <img src="/images/about_1.jpeg" alt="mlgw"></img>
             <img src="/images/about_2.jpeg" alt="mlgw"></img>
-          </div>
+          </motion.div>
         </div>
       </section>
     </Layout>
