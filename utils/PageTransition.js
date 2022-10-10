@@ -21,7 +21,7 @@ export default function PageTransition({ children }) {
   };
 
   return (
-    <div className={styles.initContent}>
+    <div className={styles.outerDiv}>
       <header className={headerStyles.header}>
         <motion.div
           initial="closed"

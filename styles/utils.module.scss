@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.outerDiv {
+  overflow: hidden;
+}
+
 .headerBottomBorder {
   width: 100%;
   height: 5px;
@@ -188,6 +192,10 @@
 .logosDiv {
   display: flex;
   justify-content: space-between;
+
+  span {
+    position: relative;
+  }
 
   img {
     height: 55px;

@@ -36,3 +36,17 @@
 .headerImage {
   width: 8rem;
 }
+
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--white);
+  
+    div {
+      padding: 15px 0;
+    }
+
+  }
+}
