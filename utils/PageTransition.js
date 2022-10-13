@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import styles from "../styles/utils.module.scss";
 import headerStyles from "../components/layout.module.scss";
 import Link from "next/link";
@@ -6,8 +7,10 @@ import { BsTelephone, BsLinkedin } from "react-icons/bs";
 import { VscMail, VscLocation } from "react-icons/vsc";
 import { ImGoogle2 } from "react-icons/im";
 import { motion } from "framer-motion";
+import HamburgerMenu from "react-hamburger-menu";
 
 export default function PageTransition({ children }) {
+  const [isHamburger, setIsHamburger] = useState(false);
   const route = useRouter().pathname.substring(1);
   const year = new Date().getFullYear();
 
@@ -18,6 +21,10 @@ export default function PageTransition({ children }) {
       transition: { type: "spring", stiffness: 100, damping: 25 },
     },
     closed: { opacity: 0, y: -30, transition: { duration: 5 } },
+  };
+
+  const handleHamburger = () => {
+    setIsHamburger(!isHamburger);
   };
 
   return (
@@ -56,7 +63,22 @@ export default function PageTransition({ children }) {
               </a>
             </Link>
           </motion.span>
-          <motion.span variants={itemVariants}>
+          <motion.span
+            className={headerStyles.hamburger}
+            variants={itemVariants}
+          >
+            <HamburgerMenu
+              isOpen={isHamburger}
+              menuClicked={handleHamburger}
+              height={10}
+              strokeWidth={1}
+              rotate={0}
+              color="black"
+              borderRadius={0}
+              animationDuration={0.5}
+            />
+          </motion.span>
+          <motion.span className={headerStyles.navItem} variants={itemVariants}>
             <Link href="/">
               <a
                 className={route === "" ? headerStyles.curPageColor : undefined}
@@ -65,7 +87,7 @@ export default function PageTransition({ children }) {
               </a>
             </Link>
           </motion.span>
-          <motion.span variants={itemVariants}>
+          <motion.span className={headerStyles.navItem} variants={itemVariants}>
             <Link href="/consulting">
               <a
                 className={
@@ -76,7 +98,7 @@ export default function PageTransition({ children }) {
               </a>
             </Link>
           </motion.span>
-          <motion.span variants={itemVariants}>
+          <motion.span className={headerStyles.navItem} variants={itemVariants}>
             <Link href="/lab">
               <a
                 className={
@@ -87,7 +109,7 @@ export default function PageTransition({ children }) {
               </a>
             </Link>
           </motion.span>
-          <motion.span variants={itemVariants}>
+          <motion.span className={headerStyles.navItem} variants={itemVariants}>
             <Link href="/contact">
               <a
                 className={
@@ -98,7 +120,7 @@ export default function PageTransition({ children }) {
               </a>
             </Link>
           </motion.span>
-          <motion.span variants={itemVariants}>
+          <motion.span className={headerStyles.navItem} variants={itemVariants}>
             <Link href="/about">
               <a
                 className={

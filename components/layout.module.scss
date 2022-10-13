@@ -37,6 +37,10 @@
   width: 8rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .header {
     display: flex;
@@ -47,6 +51,13 @@
     div {
       padding: 15px 0;
     }
+  }
 
+  .hamburger {
+    display: block;
+  }
+
+  .navItem {
+    display: none;
   }
 }
