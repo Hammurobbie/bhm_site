@@ -102,7 +102,7 @@
   }
 
   a:hover {
-    color: #282626;
+    color: #282626 !important;
     transition: 0.4s;
   }
 
@@ -466,7 +466,7 @@
 }
 
 .contactLeft p > a:hover {
-  color: #d02626;
+  color: #d02626 !important;
   transition: .4s ease-in-out;
 }
 
@@ -491,6 +491,7 @@
     }
   
     input {
+      font-size: 16px;
       padding: 8px 10px;
       margin: 7px 0 14px 0;
     }

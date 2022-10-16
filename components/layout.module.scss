@@ -24,13 +24,13 @@
   }
 
   a:hover {
-    color: var(--red);
+    color: var(--red) !important;
     transition: 0.4s;
   }
 }
 
 .curPageColor {
-  color: var(--red);
+  color: var(--red) !important;
 }
 
 .headerImage {
@@ -39,6 +39,17 @@
 
 .hamburger {
   display: none;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  font-family: 'Roboto', sans-serif;
+
+  div {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 600px) {

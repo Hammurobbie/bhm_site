@@ -8,9 +8,11 @@ import { VscMail, VscLocation } from "react-icons/vsc";
 import { ImGoogle2 } from "react-icons/im";
 import { motion } from "framer-motion";
 import HamburgerMenu from "react-hamburger-menu";
+import Accordion from "react-bootstrap/Accordion";
 
 export default function PageTransition({ children }) {
   const [isHamburger, setIsHamburger] = useState(false);
+  const [curKey, setCurKey] = useState("0");
   const route = useRouter().pathname.substring(1);
   const year = new Date().getFullYear();
 
@@ -25,6 +27,9 @@ export default function PageTransition({ children }) {
 
   const handleHamburger = () => {
     setIsHamburger(!isHamburger);
+    if (curKey === "0") {
+      setCurKey("1");
+    } else setCurKey("0");
   };
 
   return (
@@ -133,6 +138,69 @@ export default function PageTransition({ children }) {
           </motion.span>
         </motion.div>
       </header>
+      <Accordion defaultActiveKey="1" className={headerStyles.hamburger}>
+        <Accordion.Item eventKey={curKey}>
+          <Accordion.Body className={headerStyles.mobileNav}>
+            <div onClick={handleHamburger}>
+              <Link href="/">
+                <a
+                  className={
+                    route === "" ? headerStyles.curPageColor : undefined
+                  }
+                >
+                  home
+                </a>
+              </Link>
+            </div>
+            <div onClick={handleHamburger}>
+              <Link href="/consulting">
+                <a
+                  className={
+                    route === "consulting"
+                      ? headerStyles.curPageColor
+                      : undefined
+                  }
+                >
+                  consulting
+                </a>
+              </Link>
+            </div>
+            <div onClick={handleHamburger}>
+              <Link href="/lab">
+                <a
+                  className={
+                    route === "lab" ? headerStyles.curPageColor : undefined
+                  }
+                >
+                  lab
+                </a>
+              </Link>
+            </div>
+            <div onClick={handleHamburger}>
+              <Link href="/contact">
+                <a
+                  className={
+                    route === "contact" ? headerStyles.curPageColor : undefined
+                  }
+                >
+                  contact
+                </a>
+              </Link>
+            </div>
+            <div onClick={handleHamburger}>
+              <Link href="/about">
+                <a
+                  className={
+                    route === "about" ? headerStyles.curPageColor : undefined
+                  }
+                >
+                  about
+                </a>
+              </Link>
+            </div>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
       <div className={styles.content}>
         <div className={styles.contentInner}>{children}</div>
       </div>
