@@ -91,3 +91,11 @@ a {
 .accordion > * {
   border: none !important;
 }
+
+@media (max-width: 600px) {
+
+  #agc_expand, #isn_expand, #nvlap_expand, #agc_logo, #isn_logo, #nvlap_logo {
+    display: none;
+  }
+
+}
