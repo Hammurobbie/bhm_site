@@ -821,7 +821,7 @@
 
     p {
       font-size: 20px !important;
-      padding: 5px 0;
+      padding: 2px 0;
     }
   }
 
@@ -829,7 +829,7 @@
     padding: 10px 0; 
 
     a {
-      letter-spacing: 2.5px;
+      letter-spacing: 2px;
     }
 
     div {
@@ -894,8 +894,18 @@
 
     div {
       justify-content: center;
+      flex-direction: row;
       max-width: 600px;
       width: auto;
+    }
+
+    p {
+      order: 2;
+      width: auto;
+    }
+
+    div:last-child {
+      order: 3;
     }
   }
 
