@@ -760,6 +760,22 @@
   }
 }
 
+@keyframes fromLeftSlowMobile {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%);
+  }
+}
+
 
 .title {
   margin: 0;
@@ -805,6 +821,56 @@
 }
 
 @media (max-width: 600px) {
+
+  .homeCont {
+    background-image: url("/images/black_transparent.png"), url("/images/helmet_bg.png");
+    background-size: auto 100%;
+    background-position: left, -820px 0px !important;
+    position: relative;
+  }
+
+  .heroImage {
+    padding: 20px 20px 30px 20px; 
+    height: 56vh;
+  }
+
+  .title {
+    color: #ffffff;
+  }
+
+  .description {
+    width: 60%;
+    text-align: start;
+    color: var(--white);
+  }
+
+  .accolades {
+    padding: 30px 20px;
+    div {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .accolades div div {
+      width: 100%;
+      order: 2;
+  }
+
+  .accolades img {
+    margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+  }
+
+  .clients {
+    padding: 30px 20px;
+  }
+
+  .clients:last-child {
+    padding-bottom: 0;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;

@@ -129,7 +129,7 @@ export default function Home() {
               animate={
                 windH >= acc?.offsetTop + acc?.offsetHeight - 180 ||
                 scrollPos2 >= acc?.offsetTop - acc?.offsetHeight - 110
-                  ? show
+                  ? show2
                   : hide
               }
             >
@@ -155,7 +155,7 @@ export default function Home() {
               animate={
                 windH >= acc?.offsetTop + acc?.offsetHeight - 180 ||
                 scrollPos2 >= acc?.offsetTop - acc?.offsetHeight - 110
-                  ? show2
+                  ? show
                   : hide
               }
               src="/images/mlgw.png"
