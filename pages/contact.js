@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import ContactForm from "../components/ContactForm";
 import utilStyles from "../styles/utils.module.scss";
 import React, { useState, useEffect } from "react";
-import { Map, Marker, Overlay } from "pigeon-maps";
+import { Map, Marker } from "pigeon-maps";
 import { stamenToner } from "pigeon-maps/providers";
 import { motion } from "framer-motion";
 

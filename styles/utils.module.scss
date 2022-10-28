@@ -807,15 +807,6 @@
     Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
 .logo {
   height: 1em;
 }
@@ -871,9 +862,68 @@
     padding-bottom: 0;
   }
 
-  .grid {
-    width: 100%;
+  .about {
+    padding: 30px 20px;
+  }
+  
+  .about h3 {
+    margin-bottom: 20px;
+  }
+  
+  .aboutInner {
+    padding-right: 0;
     flex-direction: column;
+  }
+  
+  .aboutButtons {
+    margin-top: 20px;
+  }
+  
+  .aboutButtons button {
+    width: 45%;
+  }
+
+  .aboutLeft {
+    width: 100%;
+    padding-right: 0;
+  }
+  
+  .aboutImages {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .aboutImages img:first-child {
+    margin-bottom: 10px;
+  }
+
+  .consultingGrid, .labGrid {
+    justify-content: center;
+    margin-bottom: 0;
+  
+    div {
+      width: auto;
+      margin: 20px;
+    }
+
+    div:last-child {
+      margin-bottom: 0;
+    }
+  
+    svg {
+      color: var(--red);
+      height: 70px;
+      width: auto;
+    }
+  }
+
+  .consulting, .lab {
+    padding: 30px 20px;
+
+    p {
+      margin-bottom: 0;
+    }
   }
 
   .footer {
