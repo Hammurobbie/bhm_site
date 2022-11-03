@@ -942,6 +942,10 @@
   .contactForm {
     width: 100%;
 
+    textarea {
+      font-size: 1rem;
+    }
+
     button {
       width: 48%;
       max-width: 200px;
