@@ -1,7 +1,10 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.scss";
-import { RiLungsLine } from "react-icons/ri";
+import { RiLungsLine, RiPaintBrushLine } from "react-icons/ri";
+import { FaBacteria, FaHeadSideMask } from "react-icons/fa";
+import { MdOutlineCleanHands } from "react-icons/md";
+import { GiRiver } from "react-icons/gi";
 import { motion } from "framer-motion";
 
 export default function Consulting() {
@@ -69,7 +72,7 @@ export default function Consulting() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <RiLungsLine />
+              <FaBacteria />
               <h4>Mold Testing</h4>
               <ul>
                 <li>- Mold Inspections</li>
@@ -77,7 +80,7 @@ export default function Consulting() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <RiLungsLine />
+              <RiPaintBrushLine />
               <h4>Lead-Based Paint</h4>
               <ul>
                 <li>- Lead Inspections</li>
@@ -86,7 +89,7 @@ export default function Consulting() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <RiLungsLine />
+              <FaHeadSideMask />
               <h4>Asbestos</h4>
               <ul>
                 <li>- Building Inspections</li>
@@ -98,7 +101,7 @@ export default function Consulting() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <RiLungsLine />
+              <MdOutlineCleanHands />
               <h4>Industrial Hygiene</h4>
               <ul>
                 <li>- Safety Data Sheet (SDS) Review</li>
@@ -110,7 +113,7 @@ export default function Consulting() {
               </ul>
             </motion.div>
             <motion.div variants={itemVariants}>
-              <RiLungsLine />
+              <GiRiver />
               <h4>Environmental</h4>
               <ul>
                 <li>- Phase I Environmental Site Assessments</li>
