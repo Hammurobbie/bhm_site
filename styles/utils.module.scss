@@ -815,11 +815,8 @@
 
   .homeCont {
     background-image: url("/images/black_transparent.png"), url("/images/helmet_bg.png");
-    background-size: auto 100% !important;
-    background-position: left, -820px 0px !important;
+    background-position: right 30% top 10% !important;
     position: relative;
-    background-position-x: -200%;
-    background-position-y: 50%;
   }
 
   .heroImage {
