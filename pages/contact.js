@@ -109,7 +109,7 @@ export default function Contact() {
               </a>
             </p>
             <p className={utilStyles.contactRedP}>Hours</p>
-            <p>Mon - Fri: 7am - 10pm</p>
+            <p>Mon - Fri: 7am - 4pm</p>
           </motion.div>
           <ContactForm />
         </div>
